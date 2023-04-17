@@ -8,5 +8,10 @@ namespace Study_Branch.LOL.Class
 {
     internal class Unit
     {
+        enum Type { Fix, Move, Immune}
+        private Type type;
+        private int hp;
+        private int movePoint;
+
     }
 }

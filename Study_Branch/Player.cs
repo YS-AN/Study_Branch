@@ -6,15 +6,23 @@ using System.Threading.Tasks;
 
 namespace Study_Branch
 {
-    internal class Player
+    public class Player
     {
         public string id;
         public int hp;
         public int mp;
+        public int ap;
 
-        public void Attack()
+        public void Attack(Monster monster)
         {
-            Console.WriteLine("플레이어가 공격합니다ㅎㅎ.");
+            Console.WriteLine("플레이어가 {0}를 공격합니다.", monster);
+            monster.TakeDamage(ap);
+        }
+
+        public void TakeDamage(int damage)
+        {
+            Console.WriteLine("플레이어가 공격당합니다.");
+            hp -= damage;
         }
 
     }

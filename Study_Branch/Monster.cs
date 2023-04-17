@@ -23,7 +23,11 @@ namespace Study_Branch
             hp -= damage;
             Console.WriteLine("몬스터가 공격당합니다.");
         }
-        
+        public virtual void Attack(Player player)
+        {
+            Console.WriteLine("몬스터가 공격합니다.");
+            player.TakeDamage(this.ap);
+        }
     }
 
     public class Slime : Monster
@@ -39,11 +43,17 @@ namespace Study_Branch
             this.ap = ap;
         }
 
-        public override void TakeDamage(int damage)     // 몬스터 테이크데미지 가상 메서드 오버라이드로  재정의
+        public override void TakeDamage(int damage)
         {
             hp -= damage;
-            Console.WriteLine("{0}이 데미지를 받아 독을 뿜었습니다. 남은 체력 : {1}", name, hp);
+            Console.WriteLine("{0}이 데미지를 받아 침을 뱉습니다. 남은 체력 : {1}", name, hp);
         }
+        public override void Attack(Player player)
+        {
+            Console.WriteLine("{0} 공격!!!", name);
+            player.TakeDamage(this.ap);
+        }
+
     }
     public class Snail : Monster
     {
@@ -62,6 +72,11 @@ namespace Study_Branch
         {
             hp -= damage;
             Console.WriteLine("{0}이 데미지를 받았습니다. 남은 체력 : {1}", name, hp);
+        }
+        public override void Attack(Player player)
+        {
+            Console.WriteLine("{0} 공격!!!", name);
+            player.TakeDamage(this.ap);
         }
 
     }

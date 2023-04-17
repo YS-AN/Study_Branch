@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Study_Branch
+namespace Study_Branch.LOL.Interface
 {
-    internal class Unit
+    internal interface IHitable
     {
+        void Hit();
     }
 }
