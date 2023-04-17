@@ -1,4 +1,4 @@
-﻿namespace Study_Branch.LOL
+﻿namespace Study_Branch
 {
     internal class Program
     {
