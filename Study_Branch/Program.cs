@@ -1,7 +1,16 @@
-﻿namespace Study_Branch
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Study_Branch
 {
 	internal class Program
 	{
+
+		public class Moonster
+		{
+			public string name;
+			public int hp;
+
+		}
 		static void Main(string[] args)
 		{
 			/*
@@ -11,6 +20,7 @@
 			 * 
 			 * 
 			 */
+			
 		}
 	}
 }
