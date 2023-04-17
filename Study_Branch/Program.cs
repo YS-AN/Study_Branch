@@ -9,7 +9,7 @@ namespace Study_Branch
 		{
 			public string name;
 			public int hp;
-
+			public int Move;
 		}
 		static void Main(string[] args)
 		{
