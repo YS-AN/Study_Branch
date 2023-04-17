@@ -14,7 +14,7 @@ namespace Study_Branch
 
         public void Attack()
         {
-            Console.WriteLine("플레이어가 공격합니다.");
+            Console.WriteLine("플레이어가 공격합니다ㅎㅎ.");
         }
 
     }
