@@ -11,6 +11,12 @@ namespace Study_Branch
 			public int hp;
 			public int Move;
 		}
+		public class Tower
+		{
+			public int Attack;
+
+		}
+
 		static void Main(string[] args)
 		{
 			/*
