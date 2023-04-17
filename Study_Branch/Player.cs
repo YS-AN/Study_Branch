@@ -21,7 +21,7 @@ namespace Study_Branch
 
         public void TakeDamage(int damage)
         {
-            Console.WriteLine("플레이어가 공격당합니다.");
+            Console.WriteLine("플레이어가 공격당합니다2.");
             hp -= damage;
         }
 
